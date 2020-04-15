@@ -6,13 +6,13 @@ body {
 }
 
 .container {
+    width: 100%;
+    /* margin: 0 auto; */
     background: #23424A;
     color: white;
-
-    width: 80%;
-    margin: 0 auto;
-    
-    padding: 2em;
+    padding: 4em 0;
+    border-style: solid;
+    border-color: red;
     /* height: 300px; */
 }
 
@@ -20,5 +20,6 @@ body {
 disapear at the bottom when the screen shrings */
 
 .intro-content {
-    width: 50%
+    width: 50%;
+    margin: 0 auto;
 }
