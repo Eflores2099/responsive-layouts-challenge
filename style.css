@@ -5,21 +5,30 @@ body {
     font-family: sans-serif;
 }
 
+
 .container {
     width: 100%;
     /* margin: 0 auto; */
     background: #23424A;
     color: white;
-    padding: 4em 0;
-    border-style: solid;
-    border-color: red;
+    padding: 7em 0;
     /* height: 300px; */
 }
 
 /* The height in the container makes the text 
 disapear at the bottom when the screen shrings */
 
-.intro-content {
+.intro {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 5em;
+}
+
+button {
+    background-color:#38CFD9;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 20px;
+    color:black;
+    border: none;
 }
