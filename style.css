@@ -29,20 +29,17 @@ h1 {
     width: 100%;
 }
 
+.col + .col {
+    margin-left: 30px;
+}
+
 .col h2 {
     font-size: 36px;
     color: #87629A;
 }
 
-.bottom__section {
-    display: flex;
-    flex-direction: column;
-    background-color:#136C72;
-    padding: 5em 0;
-    color: #FFF;
-}
 
-.bottom__section h2 {
+.container h2 {
     color: #fff;
 }
 
@@ -60,8 +57,20 @@ h1 {
     margin-bottom: 3em;
 }
 
-.hero p {
-    margin-bottom: 3em;
+.three-col {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.three-col__title {
+    color: purple;
+}
+
+.two-col {
+    text-align: center;
+    padding: 3em 0;
+    background: #136c72;
+    color: white;
 }
 
 .btn {
