@@ -1,5 +1,18 @@
-*, *::before, 
-*::after {
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -7,12 +20,35 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
-    
+}
+
+img {
+    max-width: 100%;
 }
 
 h1 {
     font-size: 3rem;
-    font-size:48px;
+    margin-top: 0;
+}
+
+.section-title {
+    color: #87629a;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
 }
 
 .container {
@@ -22,25 +58,21 @@ h1 {
 }
 
 .row {
+    /* display: flex => flex container */
     display: flex;
+    justify-content: space-between;
+    
+    /* can't use yet */
+    /* gap: 100px; */
 }
 
 .col {
+    /* these are now flex items */
     width: 100%;
 }
 
 .col + .col {
     margin-left: 30px;
-}
-
-.col h2 {
-    font-size: 36px;
-    color: #87629A;
-}
-
-
-.container h2 {
-    color: #fff;
 }
 
 .hero {
@@ -49,41 +81,32 @@ h1 {
     color: #FFF;
 }
 
-.hero__text {
-    width: 60%;
+.hero__text { 
+    width: 62%;
+}
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
 }
 
 .hero p {
     margin-bottom: 3em;
 }
 
-.three-col {
+.primary-content {
+    width: 62%;
+}
+
+.main {
+    margin-top : 3em;
+
+}
+
+.sidebar {
+    width: 32%;
+    padding: 1em;
     text-align: center;
-    padding: 3em 0;
-}
-
-.three-col__title {
-    color: purple;
-}
-
-.two-col {
-    text-align: center;
-    padding: 3em 0;
-    background: #136c72;
-    color: white;
-}
-
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #38cfd9;
-    color:  #23424A;
-    padding: .75em 2em;
-    border-radius: 100px;
-}
-
-.btn:hover,
-.btn:focus {
-    opacity:0.75;
+    color:#fff;
+    background-color:#136c72;
 }
